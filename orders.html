@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>طلب جديد</title>
+    <link rel="stylesheet" href="CSS/ordrs.css">
+
+  <!-- <link rel="stylesheet" href="CSS/style.css"> -->
+</head>
+<body>
+
+    <!-- HEADER START -->
+  <header class="header-se">
+    <div class="logo">
+      <h3 class="navbr-hom">
+        fastLane <span class="span-navbr"></span> delivery</span>
+      </h3>
+      🚚
+      <div class="div-navber-login">
+       <a href="logine.html" class="bton-home"> تسجيل الدخول</a>
+      </div>
+    </div>
+    <nav>
+      <a href="home.html" class="bton-home">about us</a>
+      <a href="services.html">our services</a>
+      <a href="features.html" class="bton-order">our features</a>
+      <a href="reviwes.html" class="bton-revews">customer reviews</a>
+      <a href="order.html">Order now</a>
+      <a href="#contact">contact us</a>
+    </nav>
+  </header>
+    <!-- HEADER end -->
+
+
+<!-- HEADER START--> 
+<section id="container-order-section">
+  <div class="container">
+    <h2>نموذج طلب خدمة توصيل</h2>
+    <input type="text" id="ordername" placeholder=" اسم الطب">
+
+    <input type="text" id="orderTitle" placeholder="نوع الطلب">
+    <input type="text" id="orderDetails" placeholder="تفاصيل الطلب">
+    <input type="text" id="orderLocation" placeholder="موقع التوصيل">
+    <input type="text" id="orderPhone" placeholder="رقم الهاتف">
+    <button onclick="submitOrder()">إرسال الطلب</button>
+    <p><a href="myorders.html">عرض طلباتي</a></p>
+  </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

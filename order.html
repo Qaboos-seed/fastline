@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastLane-Delivery</title>
+<!-- <link rel="stylesheet" href="CSS/style.css"> -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="CSS/order.css">
+</head>
+<body>
+
+      <header>
+        <div class="logo">
+            <h3 class="navbr-hom">fastLane <span class="span-navbr">delivery</span></h3>
+
+            🚚
+        </div>
+        <nav>
+            <a href="home.html" class="bton-home">about us</a>
+            <a href="#services">our services</a>
+            <a href="features.html"  class="bton-order"> our features </a>
+            <a href="reviwes.html" class="bton-revews" > customer reviews </a>
+            <a href="order.html">Order now </a>
+            <a href="#contact">contact us</a>
+
+        </nav>
+    </header>
+
+<!-- HEADER START--> 
+  <!-- secion start  Orders coustomer   -->
+<section id="order" class="order1">
+<div class="order-container">
+ <section id="orders1" class="orders1">
+
+<div  class="div-welecam">
+
+<h1 class="h1-walc"> مرحبا بك في <span class="span-wlecam">فيسع لتوصيل الطلبات</span>  </h1>
+<p class="p_odrder">نسعد بخدمتك دائما <span class="span_order">اطلب وخلي الباقي علينا!</span>سواء كنت محتاج طلبات سريعة , او توصيل موثوق ومريح 
+احنا هنا علشان نسهل يومك.
+</p>
+
+<div id="div-p2">
+<p class="p2-order">
+   ابدا الان , وخلي فيسع يخدمك بأسرع مايمكن! 
+</p>
+</div>
+
+</div>
+<div class="form-section" id="signup-form">
+<h2 class="h2-oder">     logine new       </h2>
+
+<div class="logo1"> 
+  <h3 class="navbr-hom">fastLane <span class="span-navbr">delivery</span></h3>
+
+ 🚚
+  </div>
+          <!-- <div class="form-box login"> -->
+<!-- 
+            <form action="">
+                <h2>login</h2>
+                <div class="input-box">
+                    <input type="text"   placeholder="enter yoursName " required  title=" plass Enter your yousrName" >
+
+             <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    
+                    <input type="password"    placeholder=" enter your password"  required  pattern="\d{9}" required >
+
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">forgot password </a>
+                </div>
+                <button onclick="signUp()">login now </button>
+
+                <<button type="submit" class="btn">login</button> -->
+                <!-- <p>ou login with  social platforms </p> -->
+                <!-- <div class="social-icons"> -->
+                    <!-- <a href="#"><i class='bx bxl-google' ></i></a> -->
+                    <!-- <a href="#"><i class='bx bxl-facebook' ></i></a> -->
+                    <!-- <a href="#"><i class='bx bxl-github' ></i></a> -->
+                    <!-- <a href="#"><i class='bx bxl-linkedin' ></i></a> -->
+
+                <!-- </div> -->
+
+
+                
+            <!-- </form> -->
+        <!-- </div> --> 
+
+
+
+<form class="frame-login">
+<label for="clientName" class="lable_clientName">user_nmae</label>
+
+<input type="text" id="clientName" placeholder="enter yoursName " required  title=" plass Enter your yousrName"/>
+
+    <i class='bx bxs-user'></i>
+
+<label for="clientPassword" class="lable_password">password</label>
+
+<input type="password" id="clientPassword" placeholder=" enter your password"  required  pattern="\d{9}">
+                    <i class='bx bxs-lock-alt' ></i>
+
+<label for="clientName" class="lable_login">login</label>
+
+<button onclick="signUp()">login now </button>
+</form>
+</div>
+
+<div class="form-section hidden" id="order-section">
+  <!-- <h2 class="frame1-h2">نموذج طلب خدمة توصيل</h2> -->
+  <h2>نموذج طلب خدمة توصيل</h2>
+  <input type="text" id="clientId" placeholder="رقم العميل" />
+  <input type="text" id="clientNameOrder" placeholder="اسم العميل" />
+  <input type="text" id="location" placeholder="موقع التوصيل" />
+  <input type="text" id="itemName" placeholder="اسم الطلب" />
+  <input type="text" id="itemType" placeholder="نوع الطلب" />
+  <input type="text" id="clientPhone" placeholder="رقم تلفون العميل" />
+  <input type="text" id="driverName" placeholder="اسم الموصل" />
+  <input type="text" id="driverPhone" placeholder="رقم تلفون الموصل" />
+<!-- زر لحفظ قائمة الطلبات يدوياً -->
+
+  <button onclick="saveOrder()" id="saveBtn">حفظ الخدمة</button>
+  <button onclick="updateOrder()" id="updateBtn" class="hidden">تحديث</button>
+</div>
+ </section>
+  <!-- زر لحفظ قائمة الطلبات يدوياً -->
+
+  <!-- <button onclick="saveOrder()" id="saveBtn">حفظ الخدمة</button>
+  <button onclick="updateOrder()" id="updateBtn" class="hidden">تحديث</button> -->
+
+<div class="form-section hidden" id="orders-list">
+  <h2>الطلبات المسجلة</h2>
+  <div id="orderContainer"></div>
+
+</div>
+
+</section>
+</header>
+<script>
+    let orders = JSON.parse(localStorage.getItem("deliveryOrders")) || [];
+    let currentEditIndex = null;
+
+    function signUp() {
+      const name = document.getElementById("clientName").value;
+      const pass = document.getElementById("clientPassword").value;
+      if (!name || !pass) {
+        alert("الرجاء تعبئة كل الحقول");
+        return;
+      }
+      localStorage.setItem("clientAccount", JSON.stringify({ name, pass }));
+      document.getElementById("signup-form").classList.add("hidden");
+      document.getElementById("order-section").classList.remove("hidden");
+      document.getElementById("orders-list").classList.remove("hidden");
+      showOrders();
+    }
+
+    function saveOrder() {
+      const order = collectOrderForm();
+      if (!order) return;
+      orders.push(order);
+      localStorage.setItem("deliveryOrders", JSON.stringify(orders));
+      clearForm();
+      showOrders();
+    }
+
+    function updateOrder() {
+      const updatedOrder = collectOrderForm();
+      if (!updatedOrder || currentEditIndex === null) return;
+      orders[currentEditIndex] = updatedOrder;
+      localStorage.setItem("deliveryOrders", JSON.stringify(orders));
+      clearForm();
+      document.getElementById("saveBtn").classList.remove("hidden");
+      document.getElementById("updateBtn").classList.add("hidden");
+      showOrders();
+    }
+
+    function collectOrderForm() {
+      const fields = ["clientId", "clientNameOrder", "location", "itemName", "itemType", "clientPhone", "driverName", "driverPhone"];
+      let order = {};
+      for (let id of fields) {
+        let val = document.getElementById(id).value;
+        if (!val) {
+          alert("يرجى تعبئة جميع الحقول");
+          return null;
+        }
+        order[id] = val;
+      }
+      return order;
+    }
+
+    function clearForm() {
+      const fields = ["clientId", "clientNameOrder", "location", "itemName", "itemType", "clientPhone", "driverName", "driverPhone"];
+      for (let id of fields) {
+        document.getElementById(id).value = "";
+      }
+    }
+
+    function showOrders() {
+      const container = document.getElementById("orderContainer");
+      container.innerHTML = "";
+      orders.forEach((order, index) => {
+        container.innerHTML += `
+          <div class="request">
+            <span>العميل: ${order.clientNameOrder} (${order.clientId})</span>
+            <span>الطلب: ${order.itemName} - ${order.itemType}</span>
+            <span>الهاتف: ${order.clientPhone}</span>
+            <span>الموقع: ${order.location}</span>
+            <span>الموصل: ${order.driverName} (${order.driverPhone})</span>
+            <button onclick="editOrder(${index})">تعديل</button>
+            <button onclick="deleteOrder(${index})">حذف</button>
+          </div>`;
+      });
+    }
+
+    function deleteOrder(index) {
+      if (confirm("هل أنت متأكد من الحذف؟")) {
+        orders.splice(index, 1);
+        localStorage.setItem("deliveryOrders", JSON.stringify(orders));
+        showOrders();
+      }
+    }
+
+    function editOrder(index) {
+      const order = orders[index];
+      for (let key in order) {
+        document.getElementById(key).value = order[key];
+      }
+      currentEditIndex = index;
+      document.getElementById("saveBtn").classList.add("hidden");
+      document.getElementById("updateBtn").classList.remove("hidden");
+    }
+  
+  </script>
+</body>
+</html>
+
+<!-- secion end  Orders coustomer  --> 
+
+
+ 
+
+
+
+
+
+<!-- HEADER END--> 

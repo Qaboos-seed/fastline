@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/logine.css">
+</head>
+<body>
+
+    <!-- HEADER START--> 
+<!-- <header class="header-se">
+            <div class="logo">
+            <h3 class="navbr-hom">fastLane <span class="span-navbr">delivery</span></h3>
+
+            🚚
+        </div>
+        <nav>
+            <a href="home.html" class="bton-home">about us</a>
+            <a href="#services">our services</a>
+            <a href="features.html"  class="bton-order"> our features </a>
+            <a href="reviwes.html" class="bton-revews" > customer reviews </a>
+            <a href="order.html">Order now </a>
+            <a href="#contact">contact us</a>
+
+        </nav>
+
+    </header> -->
+    <!-- END HEADER -->
+
+
+    
+
+    <div class="container">
+                <!-- <div class=" logo-login">
+<h4>        🚚</h4>
+<h1>hello welcome  with fastLane delivery </h1>
+ -->
+
+        <!-- </div> -->
+
+
+        <div class="form-box login">
+
+            <form action="">
+                <h2>login</h2>
+                <div class="input-box">
+    <input type="text" id="usernameLogin" placeholder="اسم المستخدم">
+
+             <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                <input type="password" id="passwordLogin" placeholder="كلمة المرور">
+
+                    <!-- <input type="password"  placeholder=" password" required> -->
+
+
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">forgot password </a>
+                </div>
+    <button onclick="loginUser()" class="btn" >دخول</button>
+
+    <p>مستخدم جديد؟ <a href="signup.html">سجّل الآن</a></p>
+
+                <!-- <button type="submit" class="btn">login</button> -->
+                <p>ou login with  social platforms </p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+
+                </div>
+
+
+                
+            </form>
+        </div>
+
+             <div class="form-box register">
+
+            <form action="">
+                <h2>registration</h2>
+                <div class="input-box">
+    <input type="text" id="username" placeholder="اسم المستخدم">
+
+             <i class='bx bxs-user'></i>
+                </div>
+
+                <div class="input-box">
+    <input type="email" id="email" placeholder="البريد الإلكتروني">
+
+                     <i class='bx bx-envelope' ></i>
+
+                </div>
+
+                <div class="input-box">
+                    
+    <input type="password" id="password" placeholder="كلمة المرور">
+
+
+                    <i class='bx bxs-lock-alt' ></i>
+                        <input type="password" id="confirmPassword" placeholder="تأكيد كلمة المرور">
+
+                </div>
+
+                <!-- <button type="submit" class="btn">register</button> -->
+                     <button  class="btn" onclick="registerUser()">تسجيل</button>
+    <!-- <p>لديك حساب؟ <a href="login.html">سجّل الدخول</a></p> -->
+
+                <p>or  register with  social platforms </p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+
+                </div>
+
+
+                
+            </form>
+        </div>
+
+
+        <div class="toggle-box">
+
+        <div class="toggle-panel toggle-left">
+            🚚
+
+<h1>hello welcome  with fastLane delivery </h1>
+<p> do not have  an account?</p>
+<button class=" btn register-btn"> register</button>
+
+
+</div>
+
+<div class="toggle-panel toggle-right">
+<h1>welcome back!</h1>
+<p>  Already  have  an account?</p>
+<button class=" btn login-btn"> login</button>
+
+
+        </div>
+
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+      <script src="script.js"></script>
+
+    
+</body>
+</html>

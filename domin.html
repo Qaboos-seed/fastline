@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة التحكم - فيسع</title>
+  <link rel="stylesheet" href="CSS/domin..css">
+</head>
+<body>
+
+    <!-- HEADER START -->
+  <header class="header-se">
+    <div class="logo">
+      <h3 class="navbr-hom">
+        fastLane <span class="span-navbr"></span> delivery</span>
+      </h3>
+      🚚
+      <div class="div-navber-login">
+       <a href="logine.html" class="bton-home"> تسجيل الدخول</a>
+      </div>
+    </div>
+    <nav>
+      <a href="home.html" class="bton-home">about us</a>
+      <a href="services.html">our services</a>
+      <a href="features.html" class="bton-order">our features</a>
+      <a href="reviwes.html" class="bton-revews">customer reviews</a>
+      <a href="orders.html">Order now</a>
+      <a href="contect.html">contact us</a>
+    </nav>
+  </header>
+    <!-- HEADER end -->
+
+
+  <section class="domin-section">
+  <div class="container">
+    <h2>لوحة التحكم</h2>
+
+    <button class="control-btn" onclick="location.href='domin.html'">تحديث الصفحة</button>
+    <button class="control-btn" onclick="location.href='signup.html'">صفحة تسجيل مستخدم</button>
+    <button class="control-btn" onclick="location.href='Orders.html'">صفحة إرسال الطلب</button>
+
+    <h3>قائمة المستخدمين</h3>
+    <table id="userTable">
+      <tr>
+        <th>الاسم</th>
+        <th>البريد الإلكتروني</th>
+      </tr>
+    </table>
+
+    <h3 class="orderTables">قائمة الطلبات</h3>
+    <table id="orderTable">
+      <tr>
+        <th>اسم العميل</th>
+        <th>اسم الطلب</th>
+
+        <th>نوع الطلب</th>
+        <th>العنوان</th>
+        <th>حذف</th>
+
+        <th>رقم الهاتف</th>
+
+      </tr>
+    </table>
+  </div>
+</section>
+  <script>
+    // عرض المستخدمين من localStorage
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const userTable = document.getElementById("userTable");
+
+    users.forEach(user => {
+      const row = userTable.insertRow();
+      row.insertCell(0).innerText = user.username;
+      row.insertCell(1).innerText = user.email;
+    });
+
+    // عرض الطلبات من localStorage
+    const orders = JSON.parse(localStorage.getItem("order")) || [];
+    const orderTable = document.getElementById("orderTable");
+
+    orders.forEach((order, index) => {
+      const row = orderTable.insertRow();
+      row.insertCell(0).innerText = order.username;
+      row.insertCell(1).innerText = order.name;
+
+      row.insertCell(2).innerText = order.title;
+      row.insertCell(3).innerText = order.location;
+      row.insertCell(4).innerText = order.phone;
+
+      // زر حذف الطلب
+      const deleteCell = row.insertCell(4);
+      const deleteBtn = document.createElement("button");
+      deleteBtn.innerText = "حذف";
+      deleteBtn.className = "delete-btn";
+      deleteBtn.onclick = () => {
+        orders.splice(index, 1);
+        localStorage.setItem("orders", JSON.stringify(orders));
+        location.reload();
+      };
+      deleteCell.appendChild(deleteBtn);
+    });
+    // في جدول الطلبات
+  </script>
+</body>
+</html>
