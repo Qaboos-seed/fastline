@@ -1,0 +1,173 @@
+:root{
+    --primarycolor:#ff274b;
+    --color:#ff27bc;
+    --secandrycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #171a1c;
+    --bgcolor-1: #22282a;
+    --padding: 8%;
+        
+    }
+      *{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+
+  }
+
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    /* background: linear-gradient(to bottom, #f0f9ff, #ffffff); */
+    /* background: linear-gradient(to bottom, #ff274b, #171a1c); */
+
+
+    color: #222;
+  }
+   header {
+            /* background-color: #0077cc; */
+background: linear-gradient(to bottom, #ff274b, #171a1c);
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+border-radius: 15px;
+            color:var(--lightcolor);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+          header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        header .logo span {
+            color:var(--bgcolor-1);
+        }
+
+                .div-navber-login{
+          max-width: 80%;
+      margin-left: 50px;
+border-top-left-radius: 10px;
+background-color:#444;
+border-top: 5px groove royalblue;
+border-bottom: 5px outset whitesmoke;
+
+        }
+        .div-navber-login a :hover{
+             color: var(--color);
+
+
+        }
+
+
+        .div-navber-login a{
+          color: #ffd700;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+          
+        }
+
+        nav a {
+            color: var(--lightcolor);
+            margin-left: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+
+
+
+                .divs-text-services{
+            padding-left: 10px;
+           padding-right: 5px; 
+/* background-color:#0077cc; */
+    direction: rtl;
+    color: var(--lightcolor);
+    transition: color 0.3s ease;
+
+
+        }
+       .h2-div-text-services{
+        color: var(--primarycolor);
+        text-align: center;
+    font-size: 1.8rem;
+     font-weight: 700;
+
+        }
+    
+
+
+
+  /* قسم الترحيب */
+  #Home {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ff274b;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+  }
+
+  .div-welecam1 {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  .h1-walc1 {
+    font-size: 36px;
+    color: #0b3d91;
+  }
+
+  .span-wlecam1 {
+    color: #ff6600;
+  }
+
+  .p_odrder1,
+  .p2-order1 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #222;
+  }
+
+  .span_order1 {
+    font-weight: bold;
+    color: #0b3d91;
+  }
+
+  @media (max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+          footer {
+            background-color: var(--lightcolor);
+            color: var(--bgcolor-1);
+            padding: 18px 0;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: 600;
+        }
+
+

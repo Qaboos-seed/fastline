@@ -1,0 +1,326 @@
+
+
+:root{
+    --primarycolor:#ff274b;
+    --color:#ff27bc;
+    --secandrycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #171a1c;
+    --bgcolor-1: #22282a;
+    --padding: 8%;
+        
+    }
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    /* background: linear-gradient(to bottom, #f0f9ff, #ffffff); */
+    background: linear-gradient(to bottom, #ff274b, #171a1c);
+
+
+    color: #222;
+
+  }
+  *{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+
+  }
+
+   /* start HEADER */
+   
+      header {
+
+
+            /* background-color: #0077cc; */
+background: linear-gradient(to bottom, #ff274b,#ff274b);
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+border-radius: 15px;
+            color:var(--lightcolor);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+          header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        header .logo span {
+            color:var(--bgcolor-1);
+        }
+        nav a {
+            color: var(--lightcolor);
+            margin-left: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .div-navber-login{
+          max-width: 80%;
+      margin-left: 50px;
+border-top-left-radius: 10px;
+background-color:#444;
+border-top: 5px groove royalblue;
+border-bottom: 5px outset whitesmoke;
+
+        }
+        .div-navber-login a :hover{
+             color: var(--color);
+
+
+        }
+
+
+        .div-navber-login a{
+          color: #ffd700;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+          
+        }
+                .divs-text-services{
+            padding-left: 10px;
+           padding-right: 5px; 
+/* background-color:#0077cc; */
+    direction: rtl;
+    color: var(--lightcolor);
+    transition: color 0.3s ease;
+
+
+        }
+       .h2-div-text-services{
+        color: var(--primarycolor);
+        text-align: center;
+    font-size: 1.8rem;
+     font-weight: 700;
+
+        }
+    
+
+   /* END HEADER  */
+
+    /*  start Contact Section  */
+
+
+    .contact{
+     direction: rtl;
+margin-top: 15px;
+        cursor: var(--bgcolor-1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+margin-bottom: 10px;
+background: linear-gradient(to bottom, #ff274b,#ff274b);
+
+/* height: 700%; */
+
+    }
+        .contact-div-text{
+        color: #ffd700;
+        text-align: center;
+    }
+        .h1-walc1{
+color: var(--bgcolor-1);
+ padding: 5px;
+    /* margin-bottom: 5px;  */
+    font-size: 1.8rem;
+font-weight: 700;
+
+
+
+    }
+
+.span-wlecam1{
+color:#007bff
+
+    }
+    .contact-h6-text{
+     font-size: 1.2rem;
+    font-weight: 700;
+    /* margin-bottom: 2px;  */
+    color: var(--bgcolor-1);
+
+
+
+
+    }
+    .contact-pre-text{
+        margin-top: 3px;
+    font-size: 1.1rem;
+
+color:var(--bgcolor-1);
+    font-weight: 700;
+
+    }
+    .contact-contioner-div{
+        padding-top: 10px;
+        margin-top: 10px;
+ font-size: 1.2rem;
+    font-weight: 400;
+
+    }
+    .contact-h6-texts{
+color: var(--bgcolor-1);
+
+    }
+    .h1-logo-contact{
+      margin: 0;
+      text-align: center;
+      size: 50%;
+      /* border-top: 5px groove royalblue; */
+/* border-bottom: 5px outset whitesmoke; */
+
+
+    }
+
+
+    
+    .contact-section {
+      /* background-color:var(--bgcolor-1); */
+      background: linear-gradient(to bottom, #ffffff,#ffffff);
+
+      padding: 40px;
+      max-width: 700px;
+      margin: 60px auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      direction: rtl;
+      text-align: right;
+      /* margin-top:  50px; */
+      /* text-align: center; */
+
+      /* margin-top: 25px; */
+      /* height:700px; */
+    }
+
+    .contact-title {
+      color: #007bff;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .contact-description {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color:#ff274b;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--bgcolor-1);
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+
+
+
+.social-icon-contect {
+  margin-top: 10px;
+direction:ltr;
+  text-align:left;
+}
+.social-icon-contect-h6{
+  padding: 5px;
+  margin-bottom: 5px;
+color: var(--bgcolor-1);
+
+}
+
+#contect-bxs-phone-call{
+color: #007bff;
+margin-right: 5px;
+
+}
+#contect-bxl-google{
+margin-right: 5px;
+
+
+}
+.social-icon-contect2{
+  text-align: center;
+    color:black;
+    margin: 0 8px;
+    text-decoration: none;
+    border-radius: 8px;
+
+
+}
+.social-icon-contect2-h5{
+  margin-bottom: 10px;
+   font-size: 1.2rem;
+    font-weight: 400;
+
+
+
+}
+.social-icon-contect2 a{
+    display:contents;
+    padding: 10px;
+    border: 2px  solid black;
+    border-radius: 8px;
+    font-size: 24px;
+    color:black;
+    text-decoration: none;
+    margin: 0 8px;
+
+
+}
+
+        /*  end Contact Section  */
+
+        footer {
+            background-color: var(--lightcolor);
+            color: var(--bgcolor-1);
+            padding: 18px 0;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: 600;
+        }
+

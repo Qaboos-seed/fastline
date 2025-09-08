@@ -1,0 +1,190 @@
+
+:root{
+    --primarycolor:#ff274b;
+    --secandrycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #171a1c;
+    --bgcolor-1: #22282a;
+    --padding: 8%;
+        
+    }
+
+
+
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:var(--bgcolor-1);
+            margin: 0;
+
+            padding: 0;
+            /* direction: rtl; */
+        }
+        header {
+            /* background-color: #0077cc; */
+background: linear-gradient(to bottom, #ff274b, #171a1c);
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+border-radius: 15px;
+            color:var(--lightcolor);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        header .logo span {
+            color:var(--bgcolor-1);
+        }
+        nav a {
+            color: var(--lightcolor);
+            margin-left: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .divs-text-services{
+            padding-left: 10px;
+           padding-right: 5px; 
+/* background-color:#0077cc; */
+    direction: rtl;
+    color: var(--lightcolor);
+    transition: color 0.3s ease;
+
+
+        }
+       .h2-div-text-services{
+        color: var(--primarycolor);
+        text-align: center;
+    font-size: 1.8rem;
+     font-weight: 700;
+
+        }
+    
+        section#services {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            gap: 30px;
+            padding: 0 20px;
+            justify-content: center;
+        }
+
+        .services-div{
+ margin-top: 5px;
+margin-left: 15px;
+ margin-right: 15px;
+ background: linear-gradient(to bottom, #ff274b, #171a1c);
+border-bottom: 50px;
+border-style:groove;
+border-width: 10px;
+border-color: var(--lightcolor);
+margin-bottom: 10px;
+
+
+        size: 300px;
+        /* width: 90%; */
+         border-radius: 18px;
+         box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+        }
+
+            .btn1 {
+         margin-top: 15px;       
+        background: linear-gradient(90deg, #ffd700, #ffbf00);
+        border: none;
+        padding: 12px 25px;
+        border-radius: 12px;
+        font-weight: 700;
+        color: #0077cc;
+        cursor: pointer;
+        transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.15s ease;
+        font-size: 1rem;
+        align-self: center;
+        width: fit-content;
+        text-decoration: none;
+        display: inline-block;
+        user-select: none;
+    }
+
+        .service-card {
+            background-color: white;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 350px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .service-card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            height: 220px;
+        }
+        .service-card h3 {
+            color: #0077cc;
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+        .service-card p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .btn {
+            /* background-color: #ffd700;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 12px;
+            font-weight: 700;
+            color: #0077cc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1rem; */
+
+                     margin-top: 15px;       
+        background: linear-gradient(90deg, #ffd700, #ffbf00);
+        border: none;
+        padding: 12px 25px;
+        border-radius: 12px;
+        font-weight: 700;
+        color:var(--primarycolor);
+        cursor: pointer;
+        transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.15s ease;
+        font-size: 1rem;
+        align-self: center;
+        width: fit-content;
+        text-decoration: none;
+        display: inline-block;
+        user-select: none;
+
+        }
+        .btn:hover {
+            background-color: #e6c200;
+            color: #004a99;
+        }
+        footer {
+            background-color: var(--lightcolor);
+            color: var(--bgcolor-1);
+            padding: 18px 0;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: 600;
+        }

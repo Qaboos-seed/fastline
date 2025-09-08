@@ -1,0 +1,345 @@
+  /* تنسيق عام للصفحة */
+  :root{
+    --primarycolor:#ff274b;
+    --color:#ff27bc;
+    --secandrycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #171a1c;
+    --bgcolor-1: #22282a;
+    --padding: 8%;
+        
+    }
+    *{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-transform: capitalize;
+scroll-behavior: smooth;
+
+
+    }
+  body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(to bottom, #ff274b, #171a1c);
+    color: #222;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  }
+
+  /* رأس الصفحة */
+  header {
+    background: linear-gradient(to bottom, #ff274b, #171a1c);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    flex-wrap: wrap;
+  }
+
+  #navbar img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .navbr-hom {
+    font-size: 24px;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+
+  .span-navbr {
+    color: #ffcc00;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+
+  /* قسم الترحيب */
+  #Home {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url('images/delivery-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+  }
+
+  .div-welecam1 {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  .h1-walc1 {
+    font-size: 36px;
+    color: #0b3d91;
+  }
+
+  .span-wlecam1 {
+    color: #ff6600;
+  }
+
+  .p_odrder1,
+  .p2-order1 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #222;
+  }
+
+  .span_order1 {
+    font-weight: bold;
+    color: #0b3d91;
+  }
+  .section-review{
+    background-color: linear-gradient(to bottom, #ff274b, #171a1c);
+margin-top: 20px;
+
+height: 700px;
+/* background-color: rgba(118, 180, 231, 0.85); max-width: 800px; */
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+color: var(--lightcolor);
+  }
+  .text-section-reviews{
+text-align: center;
+
+  }
+  .text-h6-section-reviews{
+    color: var(--lightcolor);
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .section-review-counterimgs2{
+    width: 80px;
+  }
+  #section-review-counterimgs2{
+width: 80px;
+    cursor: pointer;
+    font-size: 6.10rem;
+    font-weight: 700;
+
+
+ 
+  }
+  #section-review-counterimgs2:hover{
+color: #ffcc00;
+  }
+
+
+  
+
+
+  .counter-reviews{
+ display: flex;
+/* align-items: center; */
+align-items: flex-start;
+justify-content:space-between;
+padding: 0 40px;
+/* flex-wrap: wrap; */
+margin-left: 10px;
+
+background-color: var(--bgcolor-1);
+height: 500px;
+/* width: 100%; */
+border-radius: 25px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+border-bottom: 50px;
+border-style:groove;
+border-width: 10px;
+border-color: var(--primarycolor);
+}
+
+  
+.reviwes-container{
+background-color: rgba(124, 226, 209, 0.85);
+border-radius: 25px;
+margin-right: 10px;
+/* background-color: #ffcc00; */
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+transition: color 0.3s ease;
+
+  }
+.reviwes-container,.div1-reviews,.div3-reviews,.v4-reviews{
+margin-top: 10px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+     cursor: pointer;
+
+  }
+  .reviwes-container,.div1-reviews,.div3-reviews,.v4-reviews:hover{
+              transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  }
+  .div1-reviews{
+    background-color:var(--primarycolor);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 25px;
+margin-left: 5px;
+margin-right: 10px;
+  }
+  .div3-reviews{
+    background-color:var(--lightcolor);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    color: var(--lightcolor);
+    border-radius: 25px;
+margin-left: 5px;
+margin-right: 10px;
+  }
+  .div4-reviews{
+    background-color: rgb(59, 84, 226);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    margin-left: 5px;
+
+  }
+  .reviwes-h1,.reviwes-h3,.reviwes-h4,.reviwes-h5,.reviwes-h2{
+    color: var(--bgcolor-1);
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+
+  }
+  .text-p2-reviwes{
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: bold;
+color: var(--lightcolor);
+padding-left: 5px;
+padding-right: 5px;
+  }
+  .text-p-reviwes{
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+  color: var(--primarycolor);
+  padding-left: 5px;
+  padding-right: 5px;
+  
+
+  }
+  .text-p4-reviwes{
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+  color: var(--lightcolor);
+  padding-left: 5px;
+  padding-right: 5px;
+  
+
+  }
+  .text-p3-reviwes{
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+  color: var(--bgcolor-1);
+  padding-left: 5px;
+  padding-right: 5px;
+  
+
+  }
+  .reviwes-counterimgs1{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-bottom: 50px;
+    border-style:outset;
+    border-width: 10px;
+    border-color: var(--lightcolor);
+        }
+
+  
+.reviwes-counterimgs2{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-bottom: 50px;
+    border-style:outset;
+    border-width: 10px;
+    border-color: var(--bgcolor-1);
+  }
+  .reviwes-counterimgs3{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-bottom: 50px;
+    border-style:inset;
+    border-width: 10px;
+    border-color: var(--primarycolor);
+  }
+  .reviwes-counterimgs4{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-bottom: 50px;
+    border-style:groove;
+    border-width: 15px;
+    border-color:#ffcc00;
+  }
+  .text-p-reviwe1{
+    text-align: center;
+    cursor: pointer;
+   color:black;
+    font-size: 2.10rem;
+    font-weight: 700;
+
+
+
+  }
+  .text-p-reviwe1:hover{
+    color:#ffcc00;
+  }
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  footer {
+            background-color: var(--lightcolor);
+            color: var(--bgcolor-1);
+            padding: 18px 0;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: 600;
+        }
+
